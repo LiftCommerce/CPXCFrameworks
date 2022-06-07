@@ -18,27 +18,27 @@
 		</data>
 		<key>Modules/CPLoginKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		1P5zM9PAvH/D7D7OCbXN7b2yrME=
+		NzseAKAp2enIKB2l+yUQwQ8VweU=
 		</data>
 		<key>Modules/CPLoginKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		63dC/gA7pk1477bSIwGxVcxQPPw=
+		HKgOJne63bzFda6+zlD9j/94jT4=
 		</data>
 		<key>Modules/CPLoginKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		MV3Dkz19vicWhM3K+8lmmeBSc64=
+		EUg7M33M6ilFPaSCBpOjWO7PQFw=
 		</data>
 		<key>Modules/CPLoginKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		A4YEre4ONpe8Vap9EUt1c758K3U=
+		aGaNxoFFEjjx30B0yNnEsouaQbk=
 		</data>
 		<key>Modules/CPLoginKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		H4tmSVqHPKZ3A56QDYRHtiXqXOA=
+		6ULOzkJCVs+0f3AaYgAfdEken1A=
 		</data>
 		<key>Modules/CPLoginKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		RKYIxehD0dJHL0g4+L3Zxx7n4OE=
+		7mIDuzkA3A6hvbxldMRZlnR4JLE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -91,42 +91,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mbe8xFzpRKAciZuNS3nzUDBKgsVLJ6pGen4ZSH9JCAE=
+			xBkp96luB+yOTaH/nlEFeeebEA/aQozz8uETqzj3Jcs=
 			</data>
 		</dict>
 		<key>Modules/CPLoginKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4YddO4xk4oM2pJ/PpJtkwVJOKJvBOrpicvEFVj2kFrU=
+			SxP0/6MXqGCKh8UWGFWoyXlSYwYWzKPKkkAOFY/DiNI=
 			</data>
 		</dict>
 		<key>Modules/CPLoginKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x9MyDmtavDAmcoRx5oeo1DmQYDR0tCA3KBhzYHSHzdU=
+			v0SGLoiYP6XKIUcavSAkZG3qf4CfV0y9CmqvGch+Pqk=
 			</data>
 		</dict>
 		<key>Modules/CPLoginKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jVqHaaKWpnEp52hXIPGi0+XSG5/ehLGMtBjKRjbbxMQ=
+			dea+GufOXVpB5A5u1ZW9tZVu+FNJSje6eoTr6Xh8ZnY=
 			</data>
 		</dict>
 		<key>Modules/CPLoginKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PJ5IdowlpEB8JB1UsWSLaL9dURxByby0KCxVI31wHXY=
+			xXXDdRUWqok4Vb2onUKtZDxupnWL3LM9j4g+QIz2+SY=
 			</data>
 		</dict>
 		<key>Modules/CPLoginKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SqZVjQxKFVW2cerDPEry4NT3AngaJI5wRpCNFJpaCXE=
+			bcLN9PNpS9AQ7qJn64zXwh77jYMKJGtAs4LdC6vF33U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

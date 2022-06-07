@@ -86,6 +86,9 @@ public struct CPSecurityQuestion : Swift.CustomStringConvertible {
   final public var userId: Swift.String? {
     get
   }
+  final public var telephone: Swift.String? {
+    get
+  }
   final public var roles: [CPLoginKit.CPRole] {
     get
   }
@@ -103,7 +106,7 @@ public struct CPSecurityQuestion : Swift.CustomStringConvertible {
   }
   @objc final public func encode(with aCoder: Foundation.NSCoder)
   @objc public init?(coder aDecoder: Foundation.NSCoder)
-  public static func registrationUser(firstName: Swift.String, lastName: Swift.String, username: Swift.String, password: Swift.String?, contact: Swift.String?, contactType: CPLoginKit.CPUserContactType, pin: Swift.String?, formattedTimeZone: CPLoginKit.CPTimeZone = .fromTimeZone(TimeZone.current), preferredLanguage: CPLoginKit.CPPreferredLanguage = .English_US) -> CPLoginKit.CPUser?
+  public static func registrationUser(firstName: Swift.String, lastName: Swift.String, username: Swift.String, telephone: Swift.String, password: Swift.String?, contact: Swift.String?, contactType: CPLoginKit.CPUserContactType, pin: Swift.String?, formattedTimeZone: CPLoginKit.CPTimeZone = .fromTimeZone(TimeZone.current), preferredLanguage: CPLoginKit.CPPreferredLanguage = .English_US) -> CPLoginKit.CPUser?
   final public func loginItem() -> CPLoginKit.CPUserLoginItem?
   @objc deinit
 }
@@ -244,6 +247,7 @@ extension CPLoginKit.CPToken {
   @objc deinit
 }
 extension CPLoginKit.CPToken {
+  public func setUser(_ user: CPLoginKit.CPUser?)
   public static func mockToken(user: CPLoginKit.CPUser?) -> CPLoginKit.CPToken?
 }
 extension CPLoginKit.CPToken {

@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/CPCoreKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zEq3qOy6+I0hFNqA63G+rIyheuI=
+		T1DVCd6xES7VAHY4/FGW825z16o=
 		</data>
 		<key>Modules/CPCoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/CPCoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		09s0Y2HJkJ/kMSNKvMQWBiiRVkI=
+		PnDo9Cq+8pwWcLrXqpVCDLOgbUA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -160,7 +160,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1jhvpnj8MvArfi7bBdjdNCyeFZ+39XZTJb3Mm1a4eyI=
+			kQss+pEusy4VIVjv+XgfjTIYhPGcA2O0R9bI7dIhrHo=
 			</data>
 		</dict>
 		<key>Modules/CPCoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -181,7 +181,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kY6kqdlR9Un3DU0psyE839mQBPq4vRpmKgKg6C2hHOU=
+			91/a4NVYU7qefbiBOpfrhzzjWQ9xjV3dKeSBuNXuPvc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
