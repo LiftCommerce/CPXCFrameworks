@@ -78,27 +78,27 @@
 		</data>
 		<key>Modules/CPPayKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		vrh7OQ6mWGqNGIjyZ9YvpZeba3I=
+		uCOd3IoDnWKVPe9K+qzM78cuheE=
 		</data>
 		<key>Modules/CPPayKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qhUZZR8K5qRKO8VgQYHZIUUS+Es=
+		DOxehR6cP76RyJso/YAt/nHr/ko=
 		</data>
 		<key>Modules/CPPayKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XVO2YGzXR3dEL1u+CLtyY0pXMRw=
+		bCcOh0Tp1G2ltg8peqsFEswzL3o=
 		</data>
 		<key>Modules/CPPayKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		/DBE4z2HhYssk5qzSMRD2l0dJhQ=
+		ZVdnI80AC73SMy9vtAPK/WrPjDY=
 		</data>
 		<key>Modules/CPPayKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		o5gq+fVixVCIC1R9+RBN26nyUhY=
+		a6oc8tly3s+IiFZ/OHWNkO1D1tI=
 		</data>
 		<key>Modules/CPPayKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zVHA5i0Ahz4VXD8G8QDMVpoCurE=
+		OCpy/yI+3YXaCvA/BD5siCxuzgA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -238,42 +238,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gOWpFHOEZ/L8FDg2zlC82zamErsXE/G7FP38uSysX6Q=
+			JaId4ftpt74OGu9d6T/Dqqdr0xYuDQS5LEb3smHtpYk=
 			</data>
 		</dict>
 		<key>Modules/CPPayKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YFfeA8KdVdF5K+pg73MrFbxW/2tmvLhwYfPWeOA2v1A=
+			wl2wvbQxln3f/rBMPQJzivcOcoZ47dPNeh1BKUmK/Ts=
 			</data>
 		</dict>
 		<key>Modules/CPPayKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lFZYcS3lDXoHmfcyjJTc6Z0z4JjevbvEgH5Hrsbubxs=
+			J/6mt6cyoyRBK/5Mpr7GSC0whwlW4h4vy3sgA0MQyKY=
 			</data>
 		</dict>
 		<key>Modules/CPPayKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			duepO+yl2N0O1YyjsdSD9cj4+6Of6SlrohNLmWLwZtY=
+			5mKyRxoXwM8lVUofhxsBM72lMdmVZ2hpk9B/EApKLeM=
 			</data>
 		</dict>
 		<key>Modules/CPPayKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7EzNPfaeiskdI6AcvFqtMyhXJrx2RAzG7/yl3ttli74=
+			hSkRIWjLV2yCRilnZ8YO3g0CT6kXm6PY5WFWRuXJUwA=
 			</data>
 		</dict>
 		<key>Modules/CPPayKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4Z+DqqnkIh2W23mA0bvn+Jjp2GMHDnmzUPTr+WvkfJI=
+			/nwCHdpfxz1Wv0qmjacehhc1jj9TMBdY52JPr4q7KO4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

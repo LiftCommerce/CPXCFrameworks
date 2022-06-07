@@ -433,6 +433,7 @@ public enum CPBankAccountType : Swift.String {
     get
   }
   public init(id: Swift.Int, last4: Swift.String, accountName: Swift.String, accountHolderFullName: Swift.String, accountDescription: Swift.String?, routingNumber: Swift.String)
+  public init?(fromJson json: CPCoreKit.CPJSON, addObject: CPPayKit.CPAddBankRequestObject)
   public typealias ID = Swift.Int
   @objc deinit
 }
@@ -467,6 +468,9 @@ public struct CPAddBankRequestObject {
   }
   public let addedDate: Foundation.Date
   public init?(accountNumber: Swift.String?, accountName: Swift.String?, routingNumber: Swift.String?, customerFullName: Swift.String?, isDefault: Swift.Bool, bankAccountType: CPPayKit.CPBankAccountType?, accountDescription: Swift.String?)
+}
+extension CPPayKit.CPAddBankRequestObject {
+  public func addContainerParameters() -> [Swift.String : Any]
 }
 public enum CPTransactionRole : Swift.String {
   case sender
@@ -555,6 +559,7 @@ public enum CPTransactionStatus : Swift.String, Swift.CustomStringConvertible {
   case error
   case aborted
   case canceled
+  case fullyRefunded
   case unknown
   public static func status(fromRawValue v: Swift.String) -> CPPayKit.CPTransactionStatus
   public var description: Swift.String {
