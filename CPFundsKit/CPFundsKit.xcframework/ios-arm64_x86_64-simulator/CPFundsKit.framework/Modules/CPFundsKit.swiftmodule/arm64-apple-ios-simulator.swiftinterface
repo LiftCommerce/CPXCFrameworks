@@ -63,6 +63,7 @@ extension CPFundsKit.FundzMessage {
 }
 public enum FundzNotificationData : Swift.CustomStringConvertible {
   case appointment(detail: CPFundsKit.AsuraAppointmentDetail)
+  case other(json: [Swift.String : Any])
   public var description: Swift.String {
     get
   }
@@ -442,70 +443,6 @@ extension CPFundsKit.P2PContact {
   public init(address1: Swift.String, address2: Swift.String?, zipCode: Swift.String, city: Swift.String, state: Swift.String, country: Swift.String, isDefault: Swift.Bool = false)
   public func requestDiccionary() -> [Swift.String : Any]
   @objc deinit
-}
-public struct KYCVerificationLevel1 {
-  public var city: Swift.String {
-    get
-  }
-  public var country: Swift.String {
-    get
-  }
-  public var dateOfBirth: Swift.String {
-    get
-  }
-  public var documentType: Swift.String {
-    get
-  }
-  public var emailAddress: Swift.String {
-    get
-  }
-  public var fullName: Swift.String {
-    get
-  }
-  public var gender: Swift.String {
-    get
-  }
-  public var phoneNumber: Swift.String {
-    get
-  }
-  public var postalCode: Swift.String {
-    get
-  }
-  public var region: Swift.String {
-    get
-  }
-  public var streetAddress: Swift.String {
-    get
-  }
-  public var taxCountry: Swift.String {
-    get
-  }
-  public var taxIdNumber: Swift.String {
-    get
-  }
-  public var taxState: Swift.String {
-    get
-  }
-  public var docId: Swift.String? {
-    get
-  }
-  public init(city: Swift.String, country: Swift.String, dateOfBirth: Swift.String, documentType: Swift.String, email: Swift.String, name: Swift.String, gender: Swift.String, phoneNumber: Swift.String, postalCode: Swift.String, region: Swift.String, streetAddress: Swift.String, taxCountry: Swift.String, taxIdNumber: Swift.String, taxState: Swift.String, docId: Swift.String)
-}
-public enum KYCStatus : Swift.String, Swift.CustomStringConvertible {
-  case LV1
-  case PENDING
-  case APPROVED_VERIFIED
-  case LV2_REJECTED
-  case LV2_APPROVED
-  case NOT_REGISTERED
-  public var description: Swift.String {
-    get
-  }
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
 }
 public protocol EventContributor {
   var username: Swift.String { get }
@@ -1255,6 +1192,7 @@ public struct FundzMerchantStoreQr : CPFundsKit.MerchantStoreQr, Swift.CustomStr
   public init(store: CPFundsKit.FundzMerchantStore)
   public init?(storeQrString: Swift.String)
   public init?(qrJson j: CPCoreKit.CPJSON)
+  public init?(searchJson j: CPCoreKit.CPJSON)
 }
 public protocol AsuraProfile : Swift.CustomStringConvertible {
   var unreadCount: Swift.Int { get }
@@ -1347,6 +1285,7 @@ public enum MerchantEmployeeStatus : Swift.String, Swift.CustomStringConvertible
   case inactive
   case deleted
   case pending
+  case all
   public var description: Swift.String {
     get
   }
@@ -1479,6 +1418,7 @@ final public class FundzUserController : CPFundsKit.FundzUserControllerProtocol 
   final public func validateEmail(withPin pin: Swift.String, completion: ((Swift.Result<Swift.Void, CPCoreKit.CPError>) -> ())?)
   final public func resendValidationPin(credential: Swift.String, credentialType: CPLoginKit.CPUserContactType, completion: ((Swift.Result<Swift.Void, CPCoreKit.CPError>) -> ())?)
   final public func resendPin(credentialType: CPLoginKit.CPUserContactType, completion: ((Swift.Result<Swift.Void, CPCoreKit.CPError>) -> ())?)
+  final public func addBankAccount(addBankObject: CPPayKit.CPAddBankRequestObject, storeId: Swift.Int? = nil, completion: ((Swift.Result<CPPayKit.CPBankAccount, CPCoreKit.CPError>) -> Swift.Void)?)
   @objc deinit
 }
 public protocol QRProtocol {
@@ -1783,7 +1723,7 @@ public protocol HistoryController {
   func getTransaction(confirmationCode code: Swift.String, completion: ((Swift.Result<CPFundsKit.FundzTransactionRecord, CPCoreKit.CPError>) -> ())?)
   func getP2PRequest(requestId: Swift.Int, completion: ((Swift.Result<Self.MR, CPCoreKit.CPError>) -> ())?)
   func fetchFundzHistory(_ below: Swift.Double?, count: Swift.Int?, completion: ((Swift.Result<Self.History, CPCoreKit.CPError>) -> ())?)
-  func fetchFundzCustomerHistory(transactionType: CPFundsKit.FundzTransactionType?, page: Swift.Int, sortOrder: CPCoreKit.CPSortOrder, pageSize: Swift.Int, specificUser uuid: Swift.String?, completion: ((Swift.Result<Self.History, CPCoreKit.CPError>) -> ())?)
+  func fetchFundzCustomerHistory(transactionType: CPFundsKit.FundzTransactionType?, page: Swift.Int, sortOrder: CPCoreKit.CPSortOrder, pageSize: Swift.Int, specificUser uuid: Swift.String?, companyId: Swift.Int, completion: ((Swift.Result<Self.History, CPCoreKit.CPError>) -> ())?)
 }
 final public class FundzHistoryController : CPFundsKit.HistoryController {
   public init()
@@ -1793,7 +1733,7 @@ final public class FundzHistoryController : CPFundsKit.HistoryController {
   final public func getTransaction(confirmationCode code: Swift.String, completion: ((Swift.Result<CPFundsKit.FundzHistoryController.Transaction, CPCoreKit.CPError>) -> ())?)
   final public func getP2PRequest(requestId: Swift.Int, completion: ((Swift.Result<CPFundsKit.FundzHistoryController.MoneyRequest, CPCoreKit.CPError>) -> ())?)
   final public func fetchFundzHistory(_ below: Swift.Double?, count: Swift.Int?, completion: ((Swift.Result<CPFundsKit.FundzHistoryController.History, CPCoreKit.CPError>) -> ())?)
-  final public func fetchFundzCustomerHistory(transactionType: CPFundsKit.FundzTransactionType? = nil, page: Swift.Int, sortOrder: CPCoreKit.CPSortOrder = .descending, pageSize: Swift.Int = 10, specificUser uuid: Swift.String? = nil, completion: ((Swift.Result<CPFundsKit.FundzHistoryController.History, CPCoreKit.CPError>) -> ())?)
+  final public func fetchFundzCustomerHistory(transactionType: CPFundsKit.FundzTransactionType? = nil, page: Swift.Int, sortOrder: CPCoreKit.CPSortOrder = .descending, pageSize: Swift.Int = 10, specificUser uuid: Swift.String? = nil, companyId: Swift.Int, completion: ((Swift.Result<CPFundsKit.FundzHistoryController.History, CPCoreKit.CPError>) -> ())?)
   public typealias MR = CPFundsKit.FundzMoneyRequest
   @objc deinit
 }
@@ -1805,6 +1745,7 @@ public protocol FundzMerchantControllerProtocol {
   func getCompaniesList(completion: ((Swift.Result<[CPFundsKit.MerchantStore], CPCoreKit.CPError>) -> ())?)
   func getReport(forStore store: CPFundsKit.MerchantStore, range: CPCoreKit.ReportRange, qrId: Swift.String?, completion: ((Swift.Result<CPFundsKit.FundzMerchantSummary, CPCoreKit.CPError>) -> ())?)
   func getMerchantStore(forId id: Swift.String, completion: ((Swift.Result<CPFundsKit.MerchantStoreQr, CPCoreKit.CPError>) -> ())?)
+  func searchMerchantStore(searchText: Swift.String, completion: ((Swift.Result<[CPFundsKit.MerchantStoreQr], CPCoreKit.CPError>) -> ())?)
   func getQRs(forStore store: CPFundsKit.MerchantStore, status: CPFundsKit.FundzQRStatus, completion: ((Swift.Result<[CPFundsKit.MerchantStoreQr], CPCoreKit.CPError>) -> ())?)
   func createQr(forStore store: CPFundsKit.MerchantStore, label: Swift.String, status: CPFundsKit.FundzQRStatus, completion: ((Swift.Result<CPFundsKit.MerchantStoreQr, CPCoreKit.CPError>) -> ())?)
   func updateQr(forStore store: CPFundsKit.MerchantStore, forQRWithId qrId: Swift.Int, label: Swift.String, status: CPFundsKit.FundzQRStatus, completion: ((Swift.Result<CPFundsKit.MerchantStoreQr, CPCoreKit.CPError>) -> ())?)
@@ -1813,7 +1754,7 @@ public protocol FundzMerchantControllerProtocol {
   func requestMoneyFromConsumer(withUsername username: Swift.String, amount: Swift.Double, fromStore store: CPFundsKit.MerchantStore, notes: Swift.String?, completion: ((Swift.Result<Self.T, CPCoreKit.CPError>) -> ())?)
   func getMoneyRequestActivity(filter: CPFundsKit.MoneyRequestRole?, status: CPFundsKit.MoneyRequestStatus, companyId: Swift.String, count: Swift.Int, below: Swift.Double?, completion: ((Swift.Result<[Self.T], CPCoreKit.CPError>) -> ())?)
   func cancelTransaction(withId trxId: Swift.String, amount: Swift.Double, notes: Swift.String?, completion: ((Swift.Result<Swift.Void, CPCoreKit.CPError>) -> ())?)
-  func refundTransaction(withId trxId: Swift.String, amount: Swift.Double, notes: Swift.String?, completion: ((Swift.Result<Swift.Void, CPCoreKit.CPError>) -> ())?)
+  func refundTransaction(withId trxId: Swift.String, companyId: Swift.String, amount: Swift.Double, notes: Swift.String?, completion: ((Swift.Result<Swift.Void, CPCoreKit.CPError>) -> ())?)
   func getRecentCustomers(for store: CPFundsKit.MerchantStore, completion: ((Swift.Result<[CPFundsKit.FundzP2PContact], CPCoreKit.CPError>) -> ())?)
   func removeEmployee(withId id: Swift.String, store: CPFundsKit.MerchantStore, completion: ((Swift.Result<Swift.Void, CPCoreKit.CPError>) -> ())?)
   func getMerchantTransaction(confirmationCode code: Swift.String, completion: ((Swift.Result<Self.Transaction, CPCoreKit.CPError>) -> ())?)
@@ -1826,6 +1767,7 @@ final public class FundzMerchantController : CPFundsKit.FundzMerchantControllerP
   public typealias History = CPFundsKit.FundzTransactionHistoryResult
   public typealias Transaction = CPFundsKit.FundzTransactionRecord
   final public func getMerchantStore(forId id: Swift.String, completion: ((Swift.Result<CPFundsKit.MerchantStoreQr, CPCoreKit.CPError>) -> ())?)
+  final public func searchMerchantStore(searchText: Swift.String, completion: ((Swift.Result<[CPFundsKit.MerchantStoreQr], CPCoreKit.CPError>) -> ())?)
   final public func getStores(completion: ((Swift.Result<[CPFundsKit.MerchantStore], CPCoreKit.CPError>) -> ())?)
   final public func getReport(forStore store: CPFundsKit.MerchantStore, range: CPCoreKit.ReportRange, qrId: Swift.String?, completion: ((Swift.Result<CPFundsKit.FundzMerchantSummary, CPCoreKit.CPError>) -> ())?)
   final public func getQRs(forStore store: CPFundsKit.MerchantStore, status: CPFundsKit.FundzQRStatus, completion: ((Swift.Result<[CPFundsKit.MerchantStoreQr], CPCoreKit.CPError>) -> ())?)
@@ -1836,10 +1778,10 @@ final public class FundzMerchantController : CPFundsKit.FundzMerchantControllerP
   final public func requestMoneyFromConsumer(withUsername username: Swift.String, amount: Swift.Double, fromStore store: CPFundsKit.MerchantStore, notes: Swift.String?, completion: ((Swift.Result<CPFundsKit.FundzMerchantController.MR, CPCoreKit.CPError>) -> ())?)
   final public func getMoneyRequestActivity(filter: CPFundsKit.MoneyRequestRole? = .sender, status: CPFundsKit.MoneyRequestStatus, companyId: Swift.String, count: Swift.Int = 10, below: Swift.Double? = nil, completion: ((Swift.Result<[CPFundsKit.FundzMerchantController.MR], CPCoreKit.CPError>) -> ())?)
   final public func cancelTransaction(withId trxId: Swift.String, amount: Swift.Double, notes: Swift.String?, completion: ((Swift.Result<Swift.Void, CPCoreKit.CPError>) -> ())?)
-  final public func refundTransaction(withId trxId: Swift.String, amount: Swift.Double, notes: Swift.String?, completion: ((Swift.Result<Swift.Void, CPCoreKit.CPError>) -> ())?)
+  final public func refundTransaction(withId trxId: Swift.String, companyId: Swift.String, amount: Swift.Double, notes: Swift.String?, completion: ((Swift.Result<Swift.Void, CPCoreKit.CPError>) -> ())?)
   final public func inviteEmployee(for companyId: Swift.String, name: Swift.String, last: Swift.String, email: Swift.String, title: Swift.String?, completion: ((Swift.Result<Swift.Void, CPCoreKit.CPError>) -> ())?)
   final public func getRecentCustomers(for store: CPFundsKit.MerchantStore, completion: ((Swift.Result<[CPFundsKit.FundzP2PContact], CPCoreKit.CPError>) -> ())?)
-  final public func getEmployees(for store: CPFundsKit.MerchantStore, completion: ((Swift.Result<[CPFundsKit.FundzMerchantEmployee], CPCoreKit.CPError>) -> ())?)
+  final public func getEmployees(for store: CPFundsKit.MerchantStore, filterStatus: [CPFundsKit.MerchantEmployeeStatus], completion: ((Swift.Result<[CPFundsKit.FundzMerchantEmployee], CPCoreKit.CPError>) -> ())?)
   final public func removeEmployee(withId id: Swift.String, store: CPFundsKit.MerchantStore, completion: ((Swift.Result<Swift.Void, CPCoreKit.CPError>) -> ())?)
   final public func inviteCustomer(with username: Swift.String, store: CPFundsKit.MerchantStore, completion: ((Swift.Result<Swift.Void, CPCoreKit.CPError>) -> ())?)
   final public func getCompanySVAid(store: CPFundsKit.MerchantStore, completion: ((Swift.Result<CPPayKit.CPSVA, CPCoreKit.CPError>) -> ())?)
@@ -2056,9 +1998,6 @@ extension CPFundsKit.MoneyRequestStatus : Swift.Hashable {}
 extension CPFundsKit.FundzTransactionSubtype : Swift.Equatable {}
 extension CPFundsKit.FundzTransactionSubtype : Swift.Hashable {}
 extension CPFundsKit.FundzTransactionSubtype : Swift.RawRepresentable {}
-extension CPFundsKit.KYCStatus : Swift.Equatable {}
-extension CPFundsKit.KYCStatus : Swift.Hashable {}
-extension CPFundsKit.KYCStatus : Swift.RawRepresentable {}
 extension CPFundsKit.BankTransactionType : Swift.Equatable {}
 extension CPFundsKit.BankTransactionType : Swift.Hashable {}
 extension CPFundsKit.FundzEvent : CPFundsKit.Event {}

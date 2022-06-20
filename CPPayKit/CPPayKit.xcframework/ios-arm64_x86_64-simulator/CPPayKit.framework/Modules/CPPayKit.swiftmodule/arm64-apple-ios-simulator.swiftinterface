@@ -68,6 +68,9 @@ import _Concurrency
 extension CPPayKit.CPCreditCard {
   final public func cardImage() -> UIKit.UIImage?
 }
+extension CPPayKit.CPCreditCard : CPPayKit.ContainerRepresentable {
+  final public func addContainerParameters() -> [Swift.String : Any]
+}
 public enum CPMoneyContainerType : Swift.String {
   case SVA
   case CC
@@ -340,6 +343,9 @@ public protocol CPMoneyContainer : Swift.CustomStringConvertible {
   func equals(_ mc: CPPayKit.CPMoneyContainer) -> Swift.Bool
   var status: CPPayKit.CPMoneyContainerStatus { get }
 }
+public protocol ContainerRepresentable {
+  func addContainerParameters() -> [Swift.String : Any]
+}
 extension CPPayKit.CPMoneyContainer {
   public var description: Swift.String {
     get
@@ -469,7 +475,7 @@ public struct CPAddBankRequestObject {
   public let addedDate: Foundation.Date
   public init?(accountNumber: Swift.String?, accountName: Swift.String?, routingNumber: Swift.String?, customerFullName: Swift.String?, isDefault: Swift.Bool, bankAccountType: CPPayKit.CPBankAccountType?, accountDescription: Swift.String?)
 }
-extension CPPayKit.CPAddBankRequestObject {
+extension CPPayKit.CPAddBankRequestObject : CPPayKit.ContainerRepresentable {
   public func addContainerParameters() -> [Swift.String : Any]
 }
 public enum CPTransactionRole : Swift.String {
@@ -778,6 +784,9 @@ public struct CPSVA : CPPayKit.CPMoneyContainer, Swift.Equatable {
   public init?(fromMerchantSVAJson j: CPCoreKit.CPJSON)
   public init?(fromJson j: CPCoreKit.CPJSON)
   public static func == (lhs: CPPayKit.CPSVA, rhs: CPPayKit.CPSVA) -> Swift.Bool
+}
+extension CPPayKit.CPSVA : CPPayKit.ContainerRepresentable {
+  public func addContainerParameters() -> [Swift.String : Any]
 }
 @objc public protocol CPCardHandler {
   @objc func add(_ card: CPPayKit.CPCreditCard, refetch: Swift.Bool, delegate: CPPayKit.CardCollectDelegate?, onSuccess: (() -> ())?, onFailure: (() -> ())?)

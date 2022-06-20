@@ -4,6 +4,62 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/CPCloudKit.framework/CPCloudKit</key>
+		<data>
+		87jN3HobPbzz33gXvWan6okr0Dw=
+		</data>
+		<key>Frameworks/CPCloudKit.framework/Info.plist</key>
+		<data>
+		6yPELNcVfAI1t5gN5Feh75Aqme4=
+		</data>
+		<key>Frameworks/CPCloudKit.framework/_CodeSignature/CodeResources</key>
+		<data>
+		qONhaoypzWXkoDoXJYzmoAPrPI0=
+		</data>
+		<key>Frameworks/CPCoreKit.framework/CPCoreKit</key>
+		<data>
+		imS6pWs5VVJ0KuvGC27AOeaA++8=
+		</data>
+		<key>Frameworks/CPCoreKit.framework/DialCountries.bundle/Info.plist</key>
+		<data>
+		cIPu7onRC50XFNs1XT1l5jFGdGk=
+		</data>
+		<key>Frameworks/CPCoreKit.framework/DialCountries.bundle/_CodeSignature/CodeDirectory</key>
+		<data>
+		v6k5krBcpAcxLw5YRFMnifYNlKU=
+		</data>
+		<key>Frameworks/CPCoreKit.framework/DialCountries.bundle/_CodeSignature/CodeRequirements</key>
+		<data>
+		OnX22wWFKRSOFN1+obRynMCeyXM=
+		</data>
+		<key>Frameworks/CPCoreKit.framework/DialCountries.bundle/_CodeSignature/CodeRequirements-1</key>
+		<data>
+		dAm7mY4lT6Yn95yZ+CuEV+gvY1E=
+		</data>
+		<key>Frameworks/CPCoreKit.framework/DialCountries.bundle/_CodeSignature/CodeResources</key>
+		<data>
+		j0+wLIg8g/dQzGc5CEt81tCuAtQ=
+		</data>
+		<key>Frameworks/CPCoreKit.framework/DialCountries.bundle/_CodeSignature/CodeSignature</key>
+		<data>
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		</data>
+		<key>Frameworks/CPCoreKit.framework/DialCountries.bundle/countries.json</key>
+		<data>
+		HJpzwuqnQECTn/d8YRLGm5mRH8M=
+		</data>
+		<key>Frameworks/CPCoreKit.framework/Info.plist</key>
+		<data>
+		Ld60BBtZDGMvo4rVBT8gfxHJY20=
+		</data>
+		<key>Frameworks/CPCoreKit.framework/_CodeSignature/CodeResources</key>
+		<data>
+		HUAWU9Nc8OufKk/BqoJvuIPlAxk=
+		</data>
+		<key>Frameworks/CPCoreKit.framework/countries.json</key>
+		<data>
+		HJpzwuqnQECTn/d8YRLGm5mRH8M=
+		</data>
 		<key>Headers/CPLoginKit-Swift.h</key>
 		<data>
 		Hp+7kA7H0yW5uffDnnnZ69mAzkU=
@@ -26,7 +82,7 @@
 		</data>
 		<key>Modules/CPLoginKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		EUg7M33M6ilFPaSCBpOjWO7PQFw=
+		YziZqmsjCnTWussgqui5ESJTV3Y=
 		</data>
 		<key>Modules/CPLoginKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,7 +94,7 @@
 		</data>
 		<key>Modules/CPLoginKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7mIDuzkA3A6hvbxldMRZlnR4JLE=
+		wOF/hrG2AaK8bNe/HheeBp7pAnM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -73,6 +129,104 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/CPCloudKit.framework/CPCloudKit</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rhnlmIGecghiv1hkj2aL8AREwgPjvQkh7PTS15/qiec=
+			</data>
+		</dict>
+		<key>Frameworks/CPCloudKit.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/f8i62uM64wCGu6F1sZqVTa55wNeTtqNKy9F/7SW7Sg=
+			</data>
+		</dict>
+		<key>Frameworks/CPCloudKit.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			B7FsefdwVu26RnJphxp2znoFTQNWUtDajQPcLKjtwTs=
+			</data>
+		</dict>
+		<key>Frameworks/CPCoreKit.framework/CPCoreKit</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Mcbdze69yHkgo1GmVMwi//aUkRIwwC/zz5bE3DHFs3Q=
+			</data>
+		</dict>
+		<key>Frameworks/CPCoreKit.framework/DialCountries.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+frQ6qkVJLtRv0c9VPEdPX07Rcf+aXbqWCw9I1hvkp0=
+			</data>
+		</dict>
+		<key>Frameworks/CPCoreKit.framework/DialCountries.bundle/_CodeSignature/CodeDirectory</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NnXai5xRa99s2LwQx1OwufgDdD6OL2z6sWoFMg9eOXc=
+			</data>
+		</dict>
+		<key>Frameworks/CPCoreKit.framework/DialCountries.bundle/_CodeSignature/CodeRequirements</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
+			</data>
+		</dict>
+		<key>Frameworks/CPCoreKit.framework/DialCountries.bundle/_CodeSignature/CodeRequirements-1</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			at1XNmAvLNfI3hyV4fu45LjhfrbsWuNusfF9bg3HBoI=
+			</data>
+		</dict>
+		<key>Frameworks/CPCoreKit.framework/DialCountries.bundle/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0sCiqFZRo616+fNRKydLB3q9wQeocl4Kf0/6WC+QzA4=
+			</data>
+		</dict>
+		<key>Frameworks/CPCoreKit.framework/DialCountries.bundle/_CodeSignature/CodeSignature</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+			</data>
+		</dict>
+		<key>Frameworks/CPCoreKit.framework/DialCountries.bundle/countries.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dgJfwgwnGR9s67NNONrMH8rf0DvBxDDICm7NkaXfofY=
+			</data>
+		</dict>
+		<key>Frameworks/CPCoreKit.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tR/qxfOv3pmOo82y3w6XJAFKyW4NmBDo3HyKFlcKUH0=
+			</data>
+		</dict>
+		<key>Frameworks/CPCoreKit.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dlmJ69MdQb120G+nFiD/aMw9nlpxFo8e5GVACjEg+Gk=
+			</data>
+		</dict>
+		<key>Frameworks/CPCoreKit.framework/countries.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dgJfwgwnGR9s67NNONrMH8rf0DvBxDDICm7NkaXfofY=
+			</data>
+		</dict>
 		<key>Headers/CPLoginKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -105,7 +259,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v0SGLoiYP6XKIUcavSAkZG3qf4CfV0y9CmqvGch+Pqk=
+			KmdYWRk44DgebgdeAeSndDj9RZdyMkilPtsvxrpCUZA=
 			</data>
 		</dict>
 		<key>Modules/CPLoginKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -126,7 +280,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bcLN9PNpS9AQ7qJn64zXwh77jYMKJGtAs4LdC6vF33U=
+			yCaj3t0vyZtIw/ZLuLX/vZ/5Cwj3fOA5X1A0XNHourE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
