@@ -6,7 +6,7 @@
 	<dict>
 		<key>Frameworks/CPCloudKit.framework/CPCloudKit</key>
 		<data>
-		87jN3HobPbzz33gXvWan6okr0Dw=
+		JfXsSCIb2aPA84ajXF23mlGQY2w=
 		</data>
 		<key>Frameworks/CPCloudKit.framework/Info.plist</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Modules/CPLoginKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YziZqmsjCnTWussgqui5ESJTV3Y=
+		EUg7M33M6ilFPaSCBpOjWO7PQFw=
 		</data>
 		<key>Modules/CPLoginKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Modules/CPLoginKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wOF/hrG2AaK8bNe/HheeBp7pAnM=
+		7mIDuzkA3A6hvbxldMRZlnR4JLE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rhnlmIGecghiv1hkj2aL8AREwgPjvQkh7PTS15/qiec=
+			+AeIyLSJ7YF2luGIsvG0VEqewAWERm5aqXUgsAfbYp0=
 			</data>
 		</dict>
 		<key>Frameworks/CPCloudKit.framework/Info.plist</key>
@@ -259,7 +259,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KmdYWRk44DgebgdeAeSndDj9RZdyMkilPtsvxrpCUZA=
+			v0SGLoiYP6XKIUcavSAkZG3qf4CfV0y9CmqvGch+Pqk=
 			</data>
 		</dict>
 		<key>Modules/CPLoginKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -280,7 +280,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yCaj3t0vyZtIw/ZLuLX/vZ/5Cwj3fOA5X1A0XNHourE=
+			bcLN9PNpS9AQ7qJn64zXwh77jYMKJGtAs4LdC6vF33U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
