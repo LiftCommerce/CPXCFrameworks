@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/CPCloudKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xQugUPmRp/WGJfwihBnHenC+47Y=
+		QIEVyBStGg/b/HDmhOHjWM7zAK4=
 		</data>
 		<key>Modules/CPCloudKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/CPCloudKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ndhRZsYOpXX1Jd3En9hCE2e0uSM=
+		vO/UpbLlJF1qoDaZcr1MTA9P518=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kc4VllY424XZYcVGm7ISzRWr16lQYjKc5BK5IiqIHoU=
+			UUpLpWZhaXZTcHqgqSvXDqM2l44D0eucuFngCrVS7oM=
 			</data>
 		</dict>
 		<key>Modules/CPCloudKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iaEIWK7SQi8jslTySAr2DVfWk1VT4qeIDDctUwJfLxc=
+			6fztCXCoKAQWwVPyX5DC5s7jCGsDlez+cgLyv9AIeTQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
